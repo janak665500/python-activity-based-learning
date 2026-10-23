@@ -12,8 +12,9 @@
 | :--- | :--- |
 | **Student Name** | [Your Name] |
 | **Roll Number** | [Your Roll Number] |
+| **Academic Program** | 1st Year B.Tech (School of Computer Studies) |
 | **Branch & Section** | [e.g., CSE - A] |
-| **Course** | Python Programming (Activity-Based Learning) |
+| **Course** | Python Programming (Activity-Based Learning - ABL) |
 | **Faculty Mentor** | [Faculty Mentor Name] |
 | **Academic Year** | 2026–2027 |
 | **Repository Name** | `Python-Activity-Based-Learning` |
@@ -28,7 +29,7 @@ This repository contains the complete implementation, algorithms, flowcharts, ps
 - **3 Case Studies from 76–100**
 
 ### ⚠️ Strict Syllabus / Concept Restrictions
-All implementations strictly adhere to foundational Python constructs as mandated:
+All implementations strictly adhere to foundational Python constructs as mandated for 1st-Year B.Tech:
 - ✅ **Computational Thinking, Algorithms, Flowcharts, Pseudocode**
 - ✅ **Variables, Data Types, and Operators**
 - ✅ **Conditional Statements** (`if`, `elif`, `else`)
@@ -44,16 +45,16 @@ All implementations strictly adhere to foundational Python constructs as mandate
 
 | # | Case Study | Category / Range | Primary Focus & Syllabus Concepts | Folder Link | Status |
 |---|---|---|---|---|---|
-| 1 | **Case Study 20: University Admission Decision Engine** | Range 1–50 | Multi-criteria conditional evaluation, cut-off thresholds, tuple storage, tie-breaking algorithms | [Case_Study_20](./Case_Study_20/) | ⏳ Pending Confirmation |
-| 2 | **Case Study 26: Nested Loop Examination Seating Generator** | Range 1–50 | Multi-dimensional matrix indexing, nested loops, alternate row/column restrictions, capacity validation | [Case_Study_26](./Case_Study_26/) | ⏳ Pending Confirmation |
-| 3 | **Case Study 35: Text Compression Using Character Runs** | Range 1–50 | String traversal, run-length compression algorithms, character accumulators, efficiency comparison | [Case_Study_35](./Case_Study_35/) | ⏳ Pending Confirmation |
-| 4 | **Case Study 42: Student Marks Matrix Analysis** | Range 1–50 | 2D nested lists, row-wise student statistics, column-wise subject analysis, matrix min/max detection | [Case_Study_42](./Case_Study_42/) | ⏳ Pending Confirmation |
-| 5 | **Case Study 56: Student Group Formation with Score Balancing** | Range 51–75 | List manipulation, score sorting, greedy distribution across teams to minimize variance in group totals | [Case_Study_56](./Case_Study_56/) | ⏳ Pending Confirmation |
-| 6 | **Case Study 61: Nested List Examination Seating Validation** | Range 51–75 | 2D matrix verification, identifying duplicate entries, detecting empty seats, and validating reserved constraints | [Case_Study_61](./Case_Study_61/) | ⏳ Pending Confirmation |
-| 7 | **Case Study 75: Integrated Student Record Consistency Checker** | Range 51–75 | Processing heterogeneous nested lists and tuples, unpacking fields, detecting duplicates, formatting anomalies, and validation | [Case_Study_75](./Case_Study_75/) | ⏳ Pending Confirmation |
-| 8 | **Case Study 85: Smart Classroom Timetable Allocation** | Range 76–100 | Tuple representations of courses/times/rooms, clash detection logic, room capacity checks, and schedule validation | [Case_Study_85](./Case_Study_85/) | ⏳ Pending Confirmation |
-| 9 | **Case Study 88: Multi-Branch Retail Inventory Transfer** | Range 76–100 | Multi-location stock reconciliation using nested lists, surplus and deficit calculation, and transfer optimization under constraints | [Case_Study_88](./Case_Study_88/) | ⏳ Pending Confirmation |
-| 10 | **Case Study 100: Comprehensive Smart Campus Management Simulation** | Range 76–100 | Capstone menu-driven engine integrating loops, nested lists, tuples, unpacking, and multi-tier summary reports | [Case_Study_100](./Case_Study_100/) | ⏳ Pending Confirmation |
+| 1 | **Case Study 20: University Admission Decision Engine** | Range 1–50 | Multi-criteria conditional evaluation, cut-off thresholds, tuple storage, tie-breaking algorithms | [Case_Study_20](./Case_Study_20/) | ✅ Completed |
+| 2 | **Case Study 26: Nested Loop Examination Seating Generator** | Range 1–50 | Multi-dimensional matrix indexing, nested loops, alternate row/column restrictions, capacity validation | [Case_Study_26](./Case_Study_26/) | ✅ Completed |
+| 3 | **Case Study 35: Text Compression Using Character Runs** | Range 1–50 | String traversal, run-length compression algorithms, character accumulators, efficiency comparison | [Case_Study_35](./Case_Study_35/) | ✅ Completed |
+| 4 | **Case Study 42: Student Marks Matrix Analysis** | Range 1–50 | 2D nested lists, row-wise student statistics, column-wise subject analysis, matrix min/max detection | [Case_Study_42](./Case_Study_42/) | ✅ Completed |
+| 5 | **Case Study 56: Student Group Formation with Score Balancing** | Range 51–75 | List manipulation, score sorting, greedy distribution across teams to minimize variance in group totals | [Case_Study_56](./Case_Study_56/) | ✅ Completed |
+| 6 | **Case Study 61: Nested List Examination Seating Validation** | Range 51–75 | 2D matrix verification, identifying duplicate entries, detecting empty seats, and validating reserved constraints | [Case_Study_61](./Case_Study_61/) | ✅ Completed |
+| 7 | **Case Study 75: Integrated Student Record Consistency Checker** | Range 51–75 | Processing heterogeneous nested lists and tuples, unpacking fields, detecting duplicates, formatting anomalies, and validation | [Case_Study_75](./Case_Study_75/) | ✅ Completed |
+| 8 | **Case Study 85: Smart Classroom Timetable Allocation** | Range 76–100 | Tuple representations of courses/times/rooms, clash detection logic, room capacity checks, and schedule validation | [Case_Study_85](./Case_Study_85/) | ✅ Completed |
+| 9 | **Case Study 88: Multi-Branch Retail Inventory Transfer** | Range 76–100 | Multi-location stock reconciliation using nested lists, surplus and deficit calculation, and transfer optimization under constraints | [Case_Study_88](./Case_Study_88/) | ✅ Completed |
+| 10 | **Case Study 100: Comprehensive Smart Campus Management Simulation** | Range 76–100 | Capstone menu-driven engine integrating loops, nested lists, tuples, unpacking, and multi-tier summary reports | [Case_Study_100](./Case_Study_100/) | ✅ Completed |
 
 ---
 
