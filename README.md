@@ -1,123 +1,46 @@
-# Python Programming - Activity-Based Learning (ABL) Assignment
+# Python Activity-Based Learning
 
-**Dr. RVR NRI Institute of Technology**  
-*School of Computer Studies*  
-*Course: Python Programming (ABL)*
+This repository contains my Python programming ABL assignment for first-year B.Tech. I worked on 10 case studies using the topics covered in class. Each case study has a Python program and a document explaining the problem and the approach.
 
----
+## Student details
 
-## 👨‍🎓 Student & Submission Details
+- Name: [kadali janak sai karthik]
+- Roll number: [Your Roll Number]
+- Branch and section: [CSM-4]
+## Case studies
 
-| Field | Details |
-| :--- | :--- |
-| **Student Name** | [Your Name] |
-| **Roll Number** | [Your Roll Number] |
-| **Academic Program** | 1st Year B.Tech (School of Computer Studies) |
-| **Branch & Section** | [e.g., CSE - A] |
-| **Course** | Python Programming (Activity-Based Learning - ABL) |
-| **Faculty Mentor** | [Faculty Mentor Name] |
-| **Academic Year** | 2026–2027 |
-| **Repository Name** | `Python-Activity-Based-Learning` |
+| Case study | Topic | Range |
+| --- | --- | --- |
+| 20 | University admission decision | 1–50 |
+| 26 | Examination seating generator | 1–50 |
+| 35 | Text compression using character runs | 1–50 |
+| 42 | Student marks analysis | 1–50 |
+| 56 | Student groups based on scores | 51–75 |
+| 61 | Examination seating validation | 51–75 |
+| 75 | Student record checker | 51–75 |
+| 85 | Classroom timetable allocation | 76–100 |
+| 88 | Retail inventory transfer | 76–100 |
+| 100 | Smart campus management | 76–100 |
 
----
+## Folder contents
 
-## 📋 Assignment Overview & Constraints
+Each `Case_Study` folder has:
 
-This repository contains the complete implementation, algorithms, flowcharts, pseudocode, test cases, and documentation for **10 Difficult-Level Case Studies** selected according to the institutional guidelines:
-- **4 Case Studies from 1–50**
-- **3 Case Studies from 51–75**
-- **3 Case Studies from 76–100**
+- `solution.py` – the program for that case study
+- `documentation.md` – the problem, algorithm, pseudocode, flowchart, and test examples
 
-### ⚠️ Strict Syllabus / Concept Restrictions
-All implementations strictly adhere to foundational Python constructs as mandated for 1st-Year B.Tech:
-- ✅ **Computational Thinking, Algorithms, Flowcharts, Pseudocode**
-- ✅ **Variables, Data Types, and Operators**
-- ✅ **Conditional Statements** (`if`, `elif`, `else`)
-- ✅ **Loops** (`for`, `while`, nested loops)
-- ✅ **Strings & Pattern Generation**
-- ✅ **Lists and Nested Lists** (2D Matrices, matrix traversal)
-- ✅ **Tuples, Tuple Operations, and Tuple Unpacking**
-- ❌ **Prohibited Constructs:** No `pandas`, no classes/OOP, no dictionaries, no user-defined functions unless explicitly permitted.
+The repository also has a consolidated report in Markdown, HTML, and PDF formats.
 
----
+## Running a program
 
-## 📚 Selected 10 Case Studies
+Open a terminal in the repository folder and run a case study with Python. For example:
 
-| # | Case Study | Category / Range | Primary Focus & Syllabus Concepts | Folder Link | Status |
-|---|---|---|---|---|---|
-| 1 | **Case Study 20: University Admission Decision Engine** | Range 1–50 | Multi-criteria conditional evaluation, cut-off thresholds, tuple storage, tie-breaking algorithms | [Case_Study_20](./Case_Study_20/) | ✅ Completed |
-| 2 | **Case Study 26: Nested Loop Examination Seating Generator** | Range 1–50 | Multi-dimensional matrix indexing, nested loops, alternate row/column restrictions, capacity validation | [Case_Study_26](./Case_Study_26/) | ✅ Completed |
-| 3 | **Case Study 35: Text Compression Using Character Runs** | Range 1–50 | String traversal, run-length compression algorithms, character accumulators, efficiency comparison | [Case_Study_35](./Case_Study_35/) | ✅ Completed |
-| 4 | **Case Study 42: Student Marks Matrix Analysis** | Range 1–50 | 2D nested lists, row-wise student statistics, column-wise subject analysis, matrix min/max detection | [Case_Study_42](./Case_Study_42/) | ✅ Completed |
-| 5 | **Case Study 56: Student Group Formation with Score Balancing** | Range 51–75 | List manipulation, score sorting, greedy distribution across teams to minimize variance in group totals | [Case_Study_56](./Case_Study_56/) | ✅ Completed |
-| 6 | **Case Study 61: Nested List Examination Seating Validation** | Range 51–75 | 2D matrix verification, identifying duplicate entries, detecting empty seats, and validating reserved constraints | [Case_Study_61](./Case_Study_61/) | ✅ Completed |
-| 7 | **Case Study 75: Integrated Student Record Consistency Checker** | Range 51–75 | Processing heterogeneous nested lists and tuples, unpacking fields, detecting duplicates, formatting anomalies, and validation | [Case_Study_75](./Case_Study_75/) | ✅ Completed |
-| 8 | **Case Study 85: Smart Classroom Timetable Allocation** | Range 76–100 | Tuple representations of courses/times/rooms, clash detection logic, room capacity checks, and schedule validation | [Case_Study_85](./Case_Study_85/) | ✅ Completed |
-| 9 | **Case Study 88: Multi-Branch Retail Inventory Transfer** | Range 76–100 | Multi-location stock reconciliation using nested lists, surplus and deficit calculation, and transfer optimization under constraints | [Case_Study_88](./Case_Study_88/) | ✅ Completed |
-| 10 | **Case Study 100: Comprehensive Smart Campus Management Simulation** | Range 76–100 | Capstone menu-driven engine integrating loops, nested lists, tuples, unpacking, and multi-tier summary reports | [Case_Study_100](./Case_Study_100/) | ✅ Completed |
-
----
-
-## 📁 Repository Structure
-
-```text
-Python-Activity-Based-Learning/
-├── README.md
-├── Case_Study_20/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_26/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_35/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_42/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_56/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_61/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_75/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_85/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_88/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-├── Case_Study_100/
-│   ├── solution.py
-│   ├── documentation.md
-│   └── output_screenshot.png
-└── Consolidated_Report.md
+```bash
+python Case_Study_20/solution.py
 ```
 
----
+Change `Case_Study_20` to another case study folder to run a different program.
 
-## 📝 10 Mandatory Deliverables per Case Study
+## Topics used
 
-Each case study folder contains:
-1. **Problem Statement:** Full, explicit problem description with constraints.
-2. **Objectives:** Clear technical and functional goals.
-3. **Assumptions:** Input constraints, data limits, and operational assumptions.
-4. **Algorithm:** Step-by-step logical sequence of operations.
-5. **Flowchart:** Flow logic diagram in GitHub-compatible Mermaid markdown format.
-6. **Pseudocode:** Formal algorithmic representation.
-7. **Python Source Code:** Validated script adhering strictly to allowed syllabus constructs.
-8. **Test Cases:** At least 2–3 test cases (Sample Input, Expected Output, and Execution Result).
-9. **Output Screenshots:** Visual execution logs and terminal captures.
-10. **Conclusion:** Analysis of algorithmic complexity, boundary condition handling, and concept summary.
+The programs mainly use variables, operators, `if` statements, loops, strings, lists, nested lists, and tuples. The solutions were written to practise the basic Python topics from the course, without using external libraries.

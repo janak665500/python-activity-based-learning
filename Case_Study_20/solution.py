@@ -14,7 +14,7 @@ print("Enter applicant details (or enter '0' at prompt to load standard test set
 num_input = input("Enter number of applicants to process: ").strip()
 
 if num_input == "" or num_input == "0" or num_input.lower() == "demo":
-    print("\n[Loading Predefined Comprehensive Evaluation Dataset (5 Applicants)...]")
+    print("\n[Loading Predefined Evaluation Dataset (6 Applicants)...]")
     # Pre-configured test dataset covering general, category relaxation, ties, and ineligibility
     applicants.append(("APP101", "Aarav Sharma", 88, 82, 75, 450, "GEN", 22))
     applicants.append(("APP102", "Bhavna Patel", 65, 58, 52, 1200, "OBC", 20))

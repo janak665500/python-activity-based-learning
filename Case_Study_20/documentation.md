@@ -1,57 +1,47 @@
-# Case Study 20: University Admission Decision Engine
+# Case Study 20: University Admission Decision Program
 
 ## 1. Problem Statement
-Design and implement an automated decision-support system for a competitive engineering university admissions board. The engine evaluates applicants based on their academic scores in Mathematics, Physics, and Chemistry (PCM), entrance examination rank, affirmative action category (`GEN`, `OBC`, `SC`, `ST`), and personal interview score. The system must verify subject and aggregate cutoff criteria with category-specific relaxations, compute a weighted Composite Merit Index (CMI), resolve rank ties using an ordered multi-criteria tie-breaking algorithm, and allocate available seats across Open Merit and Category Reserved quotas.
+This program checks applications for an engineering university. It uses each student's Mathematics, Physics and Chemistry marks, entrance exam rank, category (`GEN`, `OBC`, `SC` or `ST`), and interview score.
 
----
+First, it checks whether the student meets the required cutoffs. For eligible students, it calculates a Composite Merit Index (CMI) and sorts the students by merit. Then it assigns open and reserved seats.
 
 ## 2. Objectives
-- Accurately parse heterogeneous applicant records stored as tuples.
-- Evaluate multi-tier conditional cutoff rules (both general and relaxed category rules).
-- Calculate a normalized Composite Merit Index (CMI) combining board marks, entrance rank, and interview performance.
-- Implement an in-place multi-criteria tie-breaking sorting algorithm without using external libraries, custom functions, or built-in lambda key functions.
-- Allocate seats fairly following Open Merit and Category Quota rules.
-- Strictly adhere to allowed core syllabus concepts: variables, operators, conditionals, loops, lists, and tuple unpacking.
+- Store the applicant details in tuples and read them using tuple unpacking.
+- Check the subject marks and total marks against the cutoffs.
+- Give reserved categories lower cutoffs.
+- Calculate a CMI using marks, entrance rank and interview score.
+- Sort eligible students and use the given tie-break rules when CMI scores match.
+- Assign the available open and reserved seats.
+- Use the programming concepts required for this case study, such as variables, conditions, loops, lists and tuples.
 
 ---
 
 ## 3. Assumptions
-- Applicant tuples follow the fixed format: `(applicant_id, name, math, physics, chemistry, entrance_rank, category, interview)`.
-- Board marks are between 0 and 100. Interview scores are between 0 and 25. Entrance ranks are integers from 1 to 10,000 (lower rank number indicates superior performance).
-- General Category cutoffs: PCM Total $\ge 180$, Math $\ge 60$, Physics $\ge 55$, Chemistry $\ge 50$.
-- Reserved Categories (`OBC`, `SC`, `ST`) receive a 10% relaxation on cutoffs: PCM Total $\ge 162$, Math $\ge 54$, Physics $\ge 49$, Chemistry $\ge 45$.
-- Tie-breaking hierarchy:
-  1. Primary: Composite Merit Index (CMI) (descending).
-  2. Tie-break 1: Mathematics score (descending).
-  3. Tie-break 2: Physics score (descending).
-  4. Tie-break 3: Interview score (descending).
-  5. Tie-break 4: Entrance exam rank (ascending, i.e., lower numeric rank is better).
+- Each applicant is stored as a tuple in this order: `(applicant_id, name, math, physics, chemistry, entrance_rank, category, interview)`.
+- Subject marks are from 0 to 100. Interview scores are from 0 to 25. Entrance ranks are from 1 to 10,000. A smaller rank number is better.
+- The GEN cutoffs are: total PCM marks at least 180, Mathematics at least 60, Physics at least 55 and Chemistry at least 50.
+- The OBC, SC and ST cutoffs are: total PCM marks at least 162, Mathematics at least 54, Physics at least 49 and Chemistry at least 45.
+- Students are sorted using these rules, in order:
+  1. Higher CMI score.
+  2. Higher Mathematics score.
+  3. Higher Physics score.
+  4. Higher interview score.
+  5. Lower entrance rank.
 
 ---
 
 ## 4. Algorithm
-- **Step 1:** Initialize applicant records as a list of tuples.
-- **Step 2:** Define seat quotas: `TOTAL_SEATS = 3`, `CATEGORY_RESERVED_SEATS = 1`, `OPEN_SEATS = 2`.
-- **Step 3:** For each applicant record in the list:
-  - Unpack `(applicant_id, name, math, physics, chemistry, rank, category, interview)`.
-  - Check category-based eligibility criteria.
-  - If eligible:
-    - Compute $PCM\_Percentage = (math + physics + chemistry) / 3.0$.
-    - Compute $Normalized\_Rank = (10000 - rank) / 100.0$.
-    - Compute $Normalized\_Interview = (interview / 25.0) \times 100.0$.
-    - Compute $CMI = (PCM\_Percentage \times 0.50) + (Normalized\_Rank \times 0.30) + (Normalized\_Interview \times 0.20)$.
-    - Append evaluated tuple to `eligible_applicants`.
-  - Else:
-    - Append rejection reason to `ineligible_applicants`.
-- **Step 4:** Sort `eligible_applicants` using nested loop comparison (Bubble Sort):
-  - Compare adjacent candidates by CMI.
-  - If CMI is equal, compare Math scores; if tied, compare Physics scores; if tied, compare Interview scores; if tied, compare Entrance Ranks.
-  - Swap adjacent candidates if the successor has higher merit.
-- **Step 5:** Traverse sorted merit list and allocate:
-  - If open seats remain, allocate `ADMITTED (Open Merit)`.
-  - Else if candidate belongs to reserved category and reserved seats remain, allocate `ADMITTED (Category Quota)`.
-  - Otherwise, mark as `WAITLISTED`.
-- **Step 6:** Display final tabular admission decision sheet and summary statistics.
+- **Step 1:** Put the applicant records in a list of tuples.
+- **Step 2:** Set the seat numbers: `TOTAL_SEATS = 3`, `CATEGORY_RESERVED_SEATS = 1` and `OPEN_SEATS = 2`.
+- **Step 3:** Check each applicant's marks against the cutoffs for their category. Save eligible students in one list and save ineligible students with a reason in another list.
+- **Step 4:** For each eligible student, calculate:
+  - `PCM_Percentage = (math + physics + chemistry) / 3.0`
+  - `Normalized_Rank = (10000 - rank) / 100.0`
+  - `Normalized_Interview = (interview / 25.0) * 100.0`
+  - `CMI = (PCM_Percentage * 0.50) + (Normalized_Rank * 0.30) + (Normalized_Interview * 0.20)`
+- **Step 5:** Sort the eligible list with nested loops. Compare CMI first, then Mathematics, Physics, interview score and entrance rank. Swap two students when the one later in the list has the better result.
+- **Step 6:** Give the first two students open seats. Then give one reserved seat to the next eligible student in a reserved category, if there is one. Mark the other eligible students as waitlisted.
+- **Step 7:** Print the decision table and totals.
 
 ---
 
@@ -71,7 +61,7 @@ flowchart TD
     CalcCMI --> AddEligible[Add to Eligible List]
     Reject --> LoopApplicants
     AddEligible --> LoopApplicants
-    LoopApplicants -- No --> SortMerit[Nested Loop Bubble Sort with Multi-Criteria Tie Breaking]
+    LoopApplicants -- No --> SortMerit[Nested loop sort with tie-break rules]
     SortMerit --> AllocateSeats[Allocate Open Merit and Category Quota Seats]
     AllocateSeats --> DisplayResults[/Print Decision Table & Metrics/]
     DisplayResults --> End([End])
@@ -106,10 +96,10 @@ BEGIN UniversityAdmissionEngine
         END IF
     END FOR
 
-    // In-place Bubble Sort for multi-criteria tie-breaking
+    // Sort by CMI, then Math, Physics, interview score and entrance rank
     FOR i FROM 0 TO LENGTH(eligible_list) - 2:
         FOR j FROM 0 TO LENGTH(eligible_list) - i - 2:
-            IF eligible_list[j] should yield to eligible_list[j+1] on (CMI, Math, Physics, Intv, Rank) THEN
+            IF eligible_list[j+1] has the better result based on the tie-break rules THEN
                 SWAP eligible_list[j], eligible_list[j+1]
             END IF
         END FOR
@@ -136,33 +126,33 @@ END
 ---
 
 ## 7. Python Source Code
-*Strictly adhering to syllabus constraints: loops, conditionals, lists, tuples, and unpacking only.*
+The full program is in `solution.py` in this folder.
 
 ```python
-# Refer to solution.py in the same directory for complete executable script.
+# See solution.py for the complete program.
 ```
 
 ---
 
 ## 8. Test Cases
 
-### Test Case 1: Standard Evaluation & Tie-Breaking
+### Test Case 1: Checking the tie-break rules
 - **Inputs:**
   - `APP101`: Aarav Sharma (`GEN`, M: 88, P: 82, C: 75, Rank: 450, Interview: 22)
   - `APP103`: Chirag Verma (`GEN`, M: 92, P: 78, C: 75, Rank: 450, Interview: 22)
   - `APP105`: Divya Nair (`GEN`, M: 88, P: 82, C: 75, Rank: 450, Interview: 22)
-- **Expected Outcome:**
-  - All three achieve identical CMI = $87.08$.
-  - Tie-break: `APP103` ranks #1 due to higher Mathematics score (92 vs 88).
-  - `APP101` and `APP105` remain tied through Math and Physics; `APP101` takes Seat #2 (Open Merit), `APP105` is Waitlisted as Open Merit seats are exhausted.
+- **Expected outcome:**
+  - All three have a CMI of 87.08.
+  - `APP103` is first because their Mathematics mark is higher.
+  - `APP101` and `APP105` have the same marks and rank, so their original order stays the same. `APP101` gets the second open seat and `APP105` is waitlisted.
 
-### Test Case 2: Affirmative Action Category Cutoff Relaxation
+### Test Case 2: Checking the reserved-category cutoffs
 - **Inputs:**
   - `APP102`: Bhavna Patel (`OBC`, M: 65, P: 58, C: 52, Rank: 1200, Interview: 20) $\rightarrow$ PCM = 175.
   - `APP104`: Deepak Rao (`SC`, M: 48, P: 50, C: 42, Rank: 3500, Interview: 15) $\rightarrow$ PCM = 140.
-- **Expected Outcome:**
-  - `APP102` is eligible under relaxed cutoff ($175 \ge 162$) and secures Category Quota seat.
-  - `APP104` is rejected for failing the relaxed aggregate cutoff ($140 < 162$).
+- **Expected outcome:**
+  - If these two applicants are tested on their own, `APP102` meets the reserved-category cutoffs because their PCM total is 175 and can get the reserved seat.
+  - `APP104` is not eligible because their PCM total is 140, which is below 162.
 
 ---
 
@@ -171,7 +161,7 @@ END
 ======================================================================
        UNIVERSITY ADMISSION DECISION ENGINE (Case Study 20)
 ======================================================================
-[Loading Predefined Comprehensive Evaluation Dataset (5 Applicants)...]
+[Loading Predefined Evaluation Dataset (6 Applicants)...]
 
 ----------------------------------------------------------------------
 STAGE 1: ELIGIBILITY VERIFICATION
@@ -217,4 +207,4 @@ Total Admitted: 3 / 3 seats
 ---
 
 ## 10. Conclusion
-Case Study 20 successfully models a real-world multi-dimensional admission decision pipeline. The solution demonstrates rigorous use of tuple unpacking, multi-conditional evaluation, nested loop sorting for multi-attribute tie-breaking, and quota partitioning, strictly without violating syllabus constraints.
+This case study uses marks, entrance rank and interview scores to make an admission list. The program checks the cutoffs, works out each eligible student's CMI, sorts the list and assigns the seats. It uses tuples, lists, conditions and loops to do these steps.
