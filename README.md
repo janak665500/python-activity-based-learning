@@ -5,7 +5,7 @@ This repository contains my Python programming ABL assignment for first-year B.T
 ## Student details
 
 - Name: [kadali janak sai karthik]
-- Roll number: [Your Roll Number]
+- Roll number: [26001081]
 - Branch and section: [CSM-4]
 ## Case studies
 
