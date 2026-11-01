@@ -78,6 +78,8 @@ flowchart TD
     PrintReports --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -142,6 +144,8 @@ BEGIN StudentRecordConsistencyChecker
     PRINT tables, issue log, and health scorecard
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -228,6 +232,8 @@ Data Health / Quality Index     : 42.86%
 Database Quality Status         : [DATA SANITIZATION & CORRECTION REQUIRED]
 ================================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

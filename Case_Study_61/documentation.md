@@ -71,6 +71,8 @@ flowchart TD
     PrintAudit --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -138,6 +140,8 @@ BEGIN SeatingPlanValidator
     PRINT audit findings and final verdict
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -216,6 +220,8 @@ Total Discrepancies    : 10
 AUDIT VERDICT: [FAILED - 10 CRITICAL ISSUES REQUIRE IMMEDIATE REMEDIATION]
 ===========================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

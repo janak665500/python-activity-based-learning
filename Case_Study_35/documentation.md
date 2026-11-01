@@ -81,6 +81,8 @@ flowchart TD
     PrintReport --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -135,6 +137,8 @@ BEGIN RunLengthCompressionEngine
     PRINT compression_metrics
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -252,6 +256,8 @@ Compression Ratio           : 200.0%
 Space Savings               : -100.0%
 Economic Viability          : [INFLATION / NEGATIVE] Run overhead increased size by 29 characters (Worst-case RLE).
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

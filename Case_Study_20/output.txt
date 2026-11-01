@@ -1,0 +1,46 @@
+======================================================================
+       UNIVERSITY ADMISSION DECISION ENGINE (Case Study 20)
+======================================================================
+Enter applicant details (or enter '0' at prompt to load standard test set):
+Enter number of applicants to process:
+[Loading Predefined Evaluation Dataset (6 Applicants)...]
+
+----------------------------------------------------------------------
+STAGE 1: ELIGIBILITY VERIFICATION
+----------------------------------------------------------------------
+  [ELIGIBLE]   APP101 - Aarav Sharma (GEN) | PCM: 245 | CMI: 87.08
+  [ELIGIBLE]   APP102 - Bhavna Patel (OBC) | PCM: 175 | CMI: 71.57
+  [ELIGIBLE]   APP103 - Chirag Verma (GEN) | PCM: 245 | CMI: 87.08
+  [INELIGIBLE] APP104 - Deepak Rao (SC) | Reason: PCM aggregate 140 below cutoff (162.0)
+  [ELIGIBLE]   APP105 - Divya Nair (GEN) | PCM: 245 | CMI: 87.08
+  [ELIGIBLE]   APP106 - Esha Reddy (OBC) | PCM: 204 | CMI: 80.8
+
+----------------------------------------------------------------------
+STAGE 2: MULTI-CRITERIA TIE-BREAKING & MERIT RANKING
+----------------------------------------------------------------------
+Merit Ranking after Tie-Breaking:
+  Rank 1: APP103 | Chirag Verma | Category: GEN | CMI: 87.08 [M:92, P:78, Rank:450]
+  Rank 2: APP101 | Aarav Sharma | Category: GEN | CMI: 87.08 [M:88, P:82, Rank:450]
+  Rank 3: APP105 | Divya Nair | Category: GEN | CMI: 87.08 [M:88, P:82, Rank:450]
+  Rank 4: APP106 | Esha Reddy | Category: OBC | CMI: 80.8 [M:72, P:68, Rank:800]
+  Rank 5: APP102 | Bhavna Patel | Category: OBC | CMI: 71.57 [M:65, P:58, Rank:1200]
+
+----------------------------------------------------------------------
+STAGE 3: SEAT ALLOCATION (Open Merit & Category Quota)
+----------------------------------------------------------------------
+
+======================================================================
+FINAL UNIVERSITY ADMISSION DECISION SHEET
+======================================================================
+App ID   Candidate Name     Cat    CMI      Admission Decision
+----------------------------------------------------------------------
+APP103   Chirag Verma       GEN    87.08    ADMITTED (Open Merit)
+APP101   Aarav Sharma       GEN    87.08    ADMITTED (Open Merit)
+APP105   Divya Nair         GEN    87.08    WAITLISTED
+APP106   Esha Reddy         OBC    80.80    ADMITTED (Category Quota: OBC)
+APP102   Bhavna Patel       OBC    71.57    WAITLISTED
+APP104   Deepak Rao         SC     N/A      REJECTED (PCM aggregate 140 below cutoff (162.0))
+======================================================================
+Total Processed: 6 | Eligible: 5 | Ineligible: 1
+Total Admitted: 3 / 3 seats
+======================================================================

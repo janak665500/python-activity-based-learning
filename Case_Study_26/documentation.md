@@ -76,6 +76,8 @@ flowchart TD
     PrintGrid --> End
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -161,6 +163,8 @@ BEGIN NestedLoopSeatingGenerator
 END
 ```
 
+![Pseudocode](pseudocode.png)
+
 ---
 
 ## 7. Python Source Code
@@ -245,6 +249,8 @@ Empty Desks Remaining : 3
 Usable Seat Density   : 89.29%
 ======================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

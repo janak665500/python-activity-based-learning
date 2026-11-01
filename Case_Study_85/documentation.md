@@ -76,6 +76,8 @@ flowchart TD
     PrintMaster --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -135,6 +137,8 @@ BEGIN SmartClassroomTimetableAllocation
     PRINT room_utilization_metrics
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -214,6 +218,8 @@ Rejected / Conflicting Bookings : 3
 Total Weekly Instructional Hours: 6 hours
 ================================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

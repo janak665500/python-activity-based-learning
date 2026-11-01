@@ -1,0 +1,41 @@
+===========================================================================
+        ACADEMIC MARKS MATRIX ANALYTICS ENGINE (Case Study 42)
+===========================================================================
+Enter '1' for interactive entry or '0' for Automated Test Dataset:
+[Loading Benchmark Academic Class Matrix (6 Students x 5 Subjects)...]
+
+=====================================================================================
+STAGE 1: STUDENT-WISE TRANSCRIPT & MERIT RANKING (ROW-WISE TRAVERSAL)
+=====================================================================================
+Rank  ID       Student Name     Total   Avg %   Grade  Status Strongest Subject
+-------------------------------------------------------------------------------------
+1     STU102   Bhavna Joshi     460.0   92.00   O      PASS   Python Prog (96.0)
+2     STU105   Ehsaan Khan      443.0   88.60   A+     PASS   Python Prog (92.0)
+3     STU101   Aakash Gupta     438.0   87.60   A+     PASS   Python Prog (95.0)
+4     STU104   Deepa Sharma     331.0   66.20   F      FAIL   Python Prog (82.0)
+5     STU103   Chetan Reddy     309.0   61.80   B+     PASS   Python Prog (70.0)
+6     STU106   Fatima Zehra     240.0   48.00   C      PASS   Python Prog (55.0)
+
+=====================================================================================
+STAGE 2: SUBJECT-WISE PERFORMANCE & DIFFICULTY METRICS (COLUMN-WISE TRAVERSAL)
+=====================================================================================
+Subject Name       Class Avg   Highest   Lowest    Pass Rate  Difficulty
+-------------------------------------------------------------------------------------
+Mathematics        74.50       94.0      42.0      100.0    % Normal
+Physics            68.67       92.0      36.0      83.3     % [HARDEST]
+Chemistry          71.67       91.0      50.0      100.0    % Normal
+Python Prog        81.67       96.0      55.0      100.0    % [EASIEST]
+Data Struct        73.67       90.0      45.0      100.0    % Normal
+
+=====================================================================================
+STAGE 3: CLASS-LEVEL OVERALL SUMMARY & GRADE DISTRIBUTION
+=====================================================================================
+Class Overall Average Score : 74.03%
+Class Overall Pass Rate     : 83.33% (5/6 students)
+Academic Batch Topper       : Bhavna Joshi (STU102) with 92.0% (Total: 460.0/500)
+Most Demanding Subject      : Physics (Lowest Class Average: 68.67)
+Highest Scoring Subject     : Python Prog (Highest Class Average: 81.67)
+
+Grade Frequency Distribution:
+  Grade O: 1  |  Grade A+: 2  |  Grade A: 0  |  Grade B+: 1  |  Grade B: 0  |  Grade C: 1  |  Grade F: 1  |
+=====================================================================================

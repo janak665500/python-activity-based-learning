@@ -1,0 +1,46 @@
+================================================================================
+       SMART CLASSROOM TIMETABLE ALLOCATION ENGINE (Case Study 85)
+================================================================================
+Enter '1' for interactive entry or '0' for Automated Test Dataset:
+[Loading Standard Engineering Department Schedule Dataset...]
+
+--------------------------------------------------------------------------------
+STAGE 1: VERIFYING FACILITY & CAPACITY COMPLIANCE
+--------------------------------------------------------------------------------
+  [APPROVED] CS101  in LH101  on Monday   (09:00 - 11:00) | Dr. Ramesh
+  [REJECTED] MA104  in LH101  on Monday   (10:00 - 12:00)
+             [-] Room collision: LH101 already booked by CS101 (9:00-11:00)
+  [APPROVED] EC102  in LH102  on Monday   (09:00 - 11:00) | Prof. Anitha
+  [REJECTED] CS103  in LAB201 on Monday   (09:00 - 11:00)
+             [-] Faculty clash: Dr. Ramesh already teaching CS101 at (9:00-11:00)
+  [REJECTED] HS105  in LH102  on Tuesday  (14:00 - 16:00)
+             [-] Capacity exceeded: 45 students enrolled, but LH102 capacity is 40
+             [-] Facility mismatch: HS105 requires projector, but LH102 has no projector
+  [APPROVED] CS101  in LH101  on Tuesday  (10:00 - 12:00) | Dr. Ramesh
+
+================================================================================
+STAGE 2: MASTER CONFLICT-FREE TIMETABLE SCHEDULE
+================================================================================
+Day        Time Slot       Room     Code    Course Title                 Instructor
+--------------------------------------------------------------------------------
+Monday     09:00 - 11:00   LH101    CS101   Problem Solving with Python  Dr. Ramesh
+Monday     09:00 - 11:00   LH102    EC102   Digital Logic Design         Prof. Anitha
+Tuesday    10:00 - 12:00   LH101    CS101   Problem Solving with Python  Dr. Ramesh
+
+================================================================================
+STAGE 3: CLASSROOM UTILIZATION & CAPACITY EFFICIENCY
+================================================================================
+Room ID    Capacity   Projector    Booked Hours   Seat Utilization
+--------------------------------------------------------------------------------
+LH101      60         YES          4              91.67%
+LH102      40         NO           2              87.5%
+LAB201     30         YES          0              0.0% (Idle)
+
+================================================================================
+ALLOCATION SUMMARY METRICS
+================================================================================
+Total Booking Requests Processed : 6
+Approved Conflict-Free Classes  : 3
+Rejected / Conflicting Bookings : 3
+Total Weekly Instructional Hours: 6 hours
+================================================================================

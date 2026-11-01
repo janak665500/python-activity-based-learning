@@ -66,6 +66,8 @@ flowchart TD
     BranchChoice -- "0" --> Terminate[Set is_running = False] --> MainLoop
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -124,6 +126,8 @@ BEGIN SmartCampusManagementSimulation
     END WHILE
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -234,6 +238,8 @@ Overall Campus Operational Status   : [NOMINAL - REGULAR OPERATIONS ACTIVE]
 CAPSTONE SIMULATION RUN COMPLETED SUCCESSFULLY
 ================================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

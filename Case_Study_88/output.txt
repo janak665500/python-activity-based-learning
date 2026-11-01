@@ -1,0 +1,48 @@
+================================================================================
+     MULTI-BRANCH RETAIL INVENTORY RECONCILIATION & TRANSFER (Case Study 88)
+================================================================================
+Enter '1' for interactive entry or '0' for Automated Test Dataset:
+[Loading Standard Retail Logistics Network: 4 Branches x 4 Key Academic Items...]
+
+--------------------------------------------------------------------------------
+STAGE 1: PRE-TRANSFER INVENTORY VARIANCE STATUS
+--------------------------------------------------------------------------------
+Branch Name      Python Textbo   Lab Notebook    Scientific Ca   Engg Drawing
+--------------------------------------------------------------------------------
+Campus-North     +25 (Surplus)   +20 (Surplus)   -15 (Deficit)   -12 (Deficit)
+Campus-South     -20 (Deficit)   -20 (Deficit)   +25 (Surplus)   +20 (Surplus)
+Campus-Central   0 (Balanced)    +80 (Surplus)   +5 (Surplus)    0 (Balanced)
+Campus-East      -13 (Deficit)   -40 (Deficit)   -10 (Deficit)   -8 (Deficit)
+
+================================================================================
+STAGE 2: RECOMMENDED INTER-BRANCH STOCK TRANSFER MANIFEST
+================================================================================
+Product            From (Donor)     To (Recipient)   Units    Logistics Cost
+--------------------------------------------------------------------------------
+Python Textbook    Campus-North     Campus-South     20       Rs. 170.00
+Python Textbook    Campus-North     Campus-East      5        Rs. 42.50
+Lab Notebook       Campus-North     Campus-South     20       Rs. 170.00
+Lab Notebook       Campus-Central   Campus-East      40       Rs. 340.00
+Scientific Calc    Campus-South     Campus-North     15       Rs. 127.50
+Scientific Calc    Campus-South     Campus-East      10       Rs. 85.00
+Engg Drawing Kit   Campus-South     Campus-North     12       Rs. 102.00
+Engg Drawing Kit   Campus-South     Campus-East      8        Rs. 68.00
+--------------------------------------------------------------------------------
+Total Transfer Actions: 8 | Total Units Relocated: 130 | Total Cost: Rs. 1105.00
+
+================================================================================
+STAGE 3: POST-TRANSFER RECONCILED INVENTORY STATUS
+================================================================================
+Branch Name      Python Textbo   Lab Notebook    Scientific Ca   Engg Drawing
+--------------------------------------------------------------------------------
+Campus-North     20 [SATISFIED]  100 [SATISFIED] 30 [SATISFIED]  20 [SATISFIED]
+Campus-South     30 [SATISFIED]  100 [SATISFIED] 25 [SATISFIED]  20 [SATISFIED]
+Campus-Central   25 [SATISFIED]  160 [SURPLUS +40] 30 [SURPLUS +5] 25 [SATISFIED]
+Campus-East      17 [SHORT 8]    100 [SATISFIED] 20 [SATISFIED]  20 [SATISFIED]
+
+================================================================================
+STAGE 4: EXTERNAL WAREHOUSE RE-ORDER ORDERS REQUIRED
+================================================================================
+Internal inter-branch inventory was insufficient for the following remaining deficits:
+  [RE-ORDER] Campus-East      requires 8 additional units of 'Python Textbook' from Central Vendor
+================================================================================

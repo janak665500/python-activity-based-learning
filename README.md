@@ -28,6 +28,8 @@ Each `Case_Study` folder has:
 
 - `solution.py` – the program for that case study
 - `documentation.md` – the problem, algorithm, pseudocode, flowchart, and test examples
+- `flowchart.png` and `pseudocode.png` – visual versions of the documented flowchart and pseudocode
+- `output.txt` and `output_screenshot.png` – the solution's automated demo output in text and image formats
 
 The repository also has a consolidated report in Markdown, HTML, and PDF formats.
 

@@ -1,0 +1,79 @@
+================================================================================
+     COMPREHENSIVE SMART CAMPUS MANAGEMENT SIMULATION (Case Study 100)
+================================================================================
+Enter '1' for Interactive Menu Mode or '0' for Automated Capstone Execution:
+[AUTO-SIMULATION TRIGGER: Executing Subsystem Menu Option 1]
+
+--------------------------------------------------------------------------------
+SUBSYSTEM 1: STUDENT ROSTER, ACADEMICS & DETENTION AUDIT
+--------------------------------------------------------------------------------
+Roll No  Student Name     Branch   Sem   Fee Paid    Fee Due    Attendance   Status
+--------------------------------------------------------------------------------
+26CS01   Aarav Sharma     CSE      2     Rs.65000    Rs.0       88.5       % [ELIGIBLE]
+26EC02   Bhavna Patel     ECE      2     Rs.65000    Rs.0       91.0       % [ELIGIBLE]
+26CS03   Chirag Verma     CSE      2     Rs.45000    Rs.20000   71.0       % [DETAINED]
+26IT04   Deepa Rao        IT       2     Rs.65000    Rs.0       68.0       % [DETAINED]
+26ME05   Esha Reddy       MECH     2     Rs.50000    Rs.15000   82.0       % [ELIGIBLE]
+--------------------------------------------------------------------------------
+Total Cohort: 5 | Detained (Attendance < 75%): 2 | Total Fees Due: Rs. 35000.00
+
+[AUTO-SIMULATION TRIGGER: Executing Subsystem Menu Option 2]
+
+--------------------------------------------------------------------------------
+SUBSYSTEM 2: SMART HOSTEL 2D MATRIX ROOM OCCUPANCY GRID
+--------------------------------------------------------------------------------
+        Room 1        Room 2        Room 3        Room 4
+        --------------------------------------------------------
+Floor 0 | 26CS01        [VACANT]      26EC02        [VACANT]
+Floor 1 | 26CS03        [VACANT]      [VACANT]      26IT04
+Floor 2 | [VACANT]      26ME05        [VACANT]      [VACANT]
+--------------------------------------------------------------------------------
+Total Rooms: 12 | Occupied: 5 | Vacant: 7 | Occupancy Rate: 41.67%
+
+[AUTO-SIMULATION TRIGGER: Executing Subsystem Menu Option 3]
+
+--------------------------------------------------------------------------------
+SUBSYSTEM 3: CAMPUS LIBRARY LOANS, OVERDUE & FINE AUDIT
+--------------------------------------------------------------------------------
+Borrower   Book Title                   Days Out   Allowed    Overdue    Fine (Rs.)
+--------------------------------------------------------------------------------
+26CS01     Python Programming ABL       10         14         0          NIL
+26CS03     Data Structures in C         21         14         7          Rs. 35.00
+26EC02     Digital Electronics          14         14         0          NIL
+26IT04     Computer Networks            25         14         11         Rs. 55.00
+--------------------------------------------------------------------------------
+Total Active Loans: 4 | Overdue Returns: 2 | Total Outstanding Fines: Rs. 90.00
+
+[AUTO-SIMULATION TRIGGER: Executing Subsystem Menu Option 4]
+
+--------------------------------------------------------------------------------
+SUBSYSTEM 4: RFID SECURITY GATE TRANSIT & CURFEW BREACH AUDIT
+--------------------------------------------------------------------------------
+Time     Roll No    Gate Location    Transit    Security Compliance
+--------------------------------------------------------------------------------
+17:45    26CS01     Main Gate        EXIT       [AUTHORIZED TRANSIT]
+19:30    26CS01     Main Gate        ENTRY      [AUTHORIZED TRANSIT]
+21:40    26CS03     Hostel Gate      ENTRY      [ALERT: LATE NIGHT CURFEW BREACH]
+22:15    26IT04     Main Gate        ENTRY      [ALERT: LATE NIGHT CURFEW BREACH]
+--------------------------------------------------------------------------------
+Total RFID Events: 4 | Curfew Security Breaches: 2
+
+[AUTO-SIMULATION TRIGGER: Executing Subsystem Menu Option 5]
+
+================================================================================
+           CAMPUS-WIDE CONSOLIDATED EXECUTIVE KPI SCORECARD
+================================================================================
+Total Student Body Enrolled         : 5 Students
+Examination Eligible Rate           : 60.0% (3 eligible, 2 detained)
+Total Institutional Fees Collected : Rs. 290,000.00
+Pending Outstanding Tuition Dues    : Rs. 35,000.00
+Campus Hostel Occupancy Percentage  : 41.67% (5/12 rooms booked)
+Active Library Circulation Overdue  : 2 titles (Pending Fines: Rs. 90.00)
+Gate Curfew Security Violations     : 2 infractions logged
+================================================================================
+Overall Campus Operational Status   : [NOMINAL - REGULAR OPERATIONS ACTIVE]
+================================================================================
+
+================================================================================
+CAPSTONE SIMULATION RUN COMPLETED SUCCESSFULLY
+================================================================================

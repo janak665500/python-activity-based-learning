@@ -55,6 +55,8 @@ flowchart TD
     DisplayTeams --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -96,6 +98,8 @@ BEGIN StudentGroupFormation
     PRINT team rosters and statistical summary
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -190,6 +194,8 @@ Average Team Deviation     : 1.56 points from target
 Balance Quality Assessment : [EXCELLENT] Uniformly balanced groups.
 ===========================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

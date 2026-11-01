@@ -72,6 +72,8 @@ flowchart TD
     PrintReports --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -143,6 +145,8 @@ BEGIN StudentMarksMatrixAnalysis
     PRINT tables and statistics
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -217,6 +221,8 @@ Grade Frequency Distribution:
   Grade O: 1  |  Grade A+: 2  |  Grade A: 0  |  Grade B+: 1  |  Grade B: 0  |  Grade C: 1  |  Grade F: 1  |  
 =====================================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

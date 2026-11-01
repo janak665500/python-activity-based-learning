@@ -1,0 +1,63 @@
+===========================================================================
+     STUDENT PROJECT GROUP FORMATION & SCORE BALANCING (Case Study 56)
+===========================================================================
+Enter '1' for interactive student entry or '0' for Automated Test Dataset:
+[Loading Benchmark Class Dataset: 12 Students to be split into 3 Balanced Teams]
+
+---------------------------------------------------------------------------
+STAGE 1: SCORE SORTING VIA NESTED LOOP BUBBLE SORT
+---------------------------------------------------------------------------
+Sorted Student Pool (High to Low Scores):
+  Rank  1: 26CS01 | Aditya Sharma    | Score: 96.0
+  Rank  2: 26CS02 | Bhavya Sri       | Score: 92.5
+  Rank  3: 26CS03 | Charan Teja      | Score: 89.0
+  Rank  4: 26CS04 | Divya Vani       | Score: 85.0
+  Rank  5: 26CS05 | Eswar Kumar      | Score: 82.0
+  Rank  6: 26CS06 | Farhana Anjum    | Score: 78.5
+  Rank  7: 26CS07 | Ganesh Vardhan   | Score: 75.0
+  Rank  8: 26CS08 | Harika Devi      | Score: 71.5
+  Rank  9: 26CS09 | Imran Pasha      | Score: 68.0
+  Rank 10: 26CS10 | Jaswanth Sai     | Score: 64.0
+  Rank 11: 26CS11 | Kavya Sree       | Score: 60.5
+  Rank 12: 26CS12 | Lokesh Naidu     | Score: 54.0
+
+===========================================================================
+STAGE 2: FINAL ALLOCATED PROJECT TEAMS & COMPOSITION
+===========================================================================
+
+[TEAM 1] | Total Score: 306.50 | Average Score: 76.62 | Size: 4
+  Roll No    Student Name       Individual Score
+  ---------------------------------------------
+  26CS01     Aditya Sharma      96.0
+  26CS06     Farhana Anjum      78.5
+  26CS08     Harika Devi        71.5
+  26CS11     Kavya Sree         60.5
+
+[TEAM 2] | Total Score: 306.50 | Average Score: 76.62 | Size: 4
+  Roll No    Student Name       Individual Score
+  ---------------------------------------------
+  26CS02     Bhavya Sri         92.5
+  26CS05     Eswar Kumar        82.0
+  26CS09     Imran Pasha        68.0
+  26CS10     Jaswanth Sai       64.0
+
+[TEAM 3] | Total Score: 303.00 | Average Score: 75.75 | Size: 4
+  Roll No    Student Name       Individual Score
+  ---------------------------------------------
+  26CS03     Charan Teja        89.0
+  26CS04     Divya Vani         85.0
+  26CS07     Ganesh Vardhan     75.0
+  26CS12     Lokesh Naidu       54.0
+
+===========================================================================
+STAGE 3: BALANCE AUDIT & STATISTICAL METRICS
+===========================================================================
+Total Student Cohort Size  : 12
+Configured Teams (K)       : 3
+Ideal Aggregate per Team   : 305.33
+Highest Team Aggregate     : 306.50
+Lowest Team Aggregate      : 303.00
+Score Spread / Disparity   : 3.5 points
+Average Team Deviation     : 1.56 points from target
+Balance Quality Assessment : [EXCELLENT] Uniformly balanced groups.
+===========================================================================

@@ -67,6 +67,8 @@ flowchart TD
     DisplayResults --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -122,6 +124,8 @@ BEGIN UniversityAdmissionEngine
     PRINT decision table and metrics
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -203,6 +207,8 @@ Total Processed: 6 | Eligible: 5 | Ineligible: 1
 Total Admitted: 3 / 3 seats
 ======================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

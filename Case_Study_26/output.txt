@@ -1,0 +1,44 @@
+======================================================================
+     EXAMINATION SEATING MATRIX GENERATOR (Case Study 26)
+======================================================================
+Enter '1' for Interactive Input or '0' for Automated Test Dataset:
+[Loading Standard Test Configuration: 5 Rows x 6 Columns (Capacity: 30)]
+
+----------------------------------------------------------------------
+STAGE 1: CAPACITY & ALTERNATION VALIDATION
+----------------------------------------------------------------------
+Total Hall Seats     : 30
+Blocked/Broken Seats : 2
+Usable Seats         : 28
+Total Candidates     : 25 (CSE: 13, ECE: 12)
+
+[VALIDATION SUCCESS] Hall capacity is sufficient.
+
+----------------------------------------------------------------------
+STAGE 2: GENERATED EXAMINATION SEATING GRID
+----------------------------------------------------------------------
+        Col 0      Col 1      Col 2      Col 3      Col 4      Col 5
+        ------------------------------------------------------------
+Row 0   | CS101     EC201     CS102     EC202     CS103     EC203
+Row 1   | EC204     CS104     [BLOCKED] CS105     EC205     CS106
+Row 2   | CS107     EC206     CS108     EC207     CS109     EC208
+Row 3   | EC209     CS110     EC210     CS111     [BLOCKED] CS112
+Row 4   | CS113     EC211     [EMPTY]   EC212     [EMPTY]   [EMPTY]
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+STAGE 3: ADJACENCY & MALPRACTICE AUDIT
+----------------------------------------------------------------------
+  [AUDIT PASSED] Zero adjacency violations detected. Anti-cheating alternating constraint verified!
+
+======================================================================
+EXAMINATION SEATING SUMMARY METRICS
+======================================================================
+Total Hall Dimensions : 5 Rows x 6 Columns
+Total Seat Capacity   : 30
+Blocked Seats         : 2
+CSE Seated       : 13 / 13 (Unseated: 0)
+ECE Seated       : 12 / 12 (Unseated: 0)
+Empty Desks Remaining : 3
+Usable Seat Density   : 89.29%
+======================================================================

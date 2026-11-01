@@ -65,6 +65,8 @@ flowchart TD
     PrintReports --> End([End])
 ```
 
+![Flowchart](flowchart.png)
+
 ---
 
 ## 6. Pseudocode
@@ -113,6 +115,8 @@ BEGIN MultiBranchInventoryTransfer
     PRINT variance_matrix, transfer_manifest, working_stock, and purchase_orders
 END
 ```
+
+![Pseudocode](pseudocode.png)
 
 ---
 
@@ -192,6 +196,8 @@ Internal inter-branch inventory was insufficient for the following remaining def
   [RE-ORDER] Campus-East      requires 8 additional units of 'Python Textbook' from Central Vendor
 ================================================================================
 ```
+
+![Output Screenshot](output_screenshot.png)
 
 ---
 

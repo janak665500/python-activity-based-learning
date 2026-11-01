@@ -1,0 +1,113 @@
+======================================================================
+     TEXT COMPRESSION & RUN-LENGTH ENCODING ENGINE (Case Study 35)
+======================================================================
+Enter '1' to input custom text or '0' for Automated Test Dataset:
+[Loading Standard Benchmark Test Suite (4 Test Corpora)...]
+
+======================================================================
+ANALYSIS OF CORPUS #1: "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWW..."
+======================================================================
+
+STAGE 1: COMPRESSION RESULT
+--------------------------------------------------
+Original Text   : WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWEEEEEEEEEEEE
+Compressed Text : 12W1B12W3B24W1B4W12E
+Original Size   : 69 characters
+Compressed Size : 20 characters
+
+STAGE 2: DECOMPRESSION & RECONSTRUCTION
+--------------------------------------------------
+Decompressed    : WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWEEEEEEEEEEEE
+Integrity Audit : [PASSED] Perfect lossless reconstruction confirmed!
+
+STAGE 3: STATISTICAL METRICS & EFFICIENCY
+--------------------------------------------------
+Total Unique Character Runs : 8
+Minimum Run Length          : 1
+Maximum Run Length          : 24
+Average Run Length          : 8.62
+Compression Ratio           : 28.99%
+Space Savings               : 71.01%
+Economic Viability          : [BENEFICIAL] Reduced storage by 49 characters.
+
+======================================================================
+ANALYSIS OF CORPUS #2: "AAAAABBBCCDAAEEEEEEE"
+======================================================================
+
+STAGE 1: COMPRESSION RESULT
+--------------------------------------------------
+Original Text   : AAAAABBBCCDAAEEEEEEE
+Compressed Text : 5A3B2C1D2A7E
+Original Size   : 20 characters
+Compressed Size : 12 characters
+
+STAGE 2: DECOMPRESSION & RECONSTRUCTION
+--------------------------------------------------
+Decompressed    : AAAAABBBCCDAAEEEEEEE
+Integrity Audit : [PASSED] Perfect lossless reconstruction confirmed!
+
+STAGE 3: STATISTICAL METRICS & EFFICIENCY
+--------------------------------------------------
+Total Unique Character Runs : 6
+Minimum Run Length          : 1
+Maximum Run Length          : 7
+Average Run Length          : 3.33
+Compression Ratio           : 60.0%
+Space Savings               : 40.0%
+Economic Viability          : [BENEFICIAL] Reduced storage by 8 characters.
+
+======================================================================
+ANALYSIS OF CORPUS #3: "XYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
+======================================================================
+
+STAGE 1: COMPRESSION RESULT
+--------------------------------------------------
+Original Text   : XYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+Compressed Text : 1X1Y1Z1A1B1C1D1E1F1G1H1I1J1K1L1M1N1O1P1Q1R1S1T1U1V1W1X1Y1Z
+Original Size   : 29 characters
+Compressed Size : 58 characters
+
+STAGE 2: DECOMPRESSION & RECONSTRUCTION
+--------------------------------------------------
+Decompressed    : XYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+Integrity Audit : [PASSED] Perfect lossless reconstruction confirmed!
+
+STAGE 3: STATISTICAL METRICS & EFFICIENCY
+--------------------------------------------------
+Total Unique Character Runs : 29
+Minimum Run Length          : 1
+Maximum Run Length          : 1
+Average Run Length          : 1.0
+Compression Ratio           : 200.0%
+Space Savings               : -100.0%
+Economic Viability          : [INFLATION / NEGATIVE] Run overhead increased size by 29 characters (Worst-case RLE).
+
+======================================================================
+ANALYSIS OF CORPUS #4: "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+======================================================================
+
+STAGE 1: COMPRESSION RESULT
+--------------------------------------------------
+Original Text   : MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Compressed Text : 36M
+Original Size   : 36 characters
+Compressed Size : 3 characters
+
+STAGE 2: DECOMPRESSION & RECONSTRUCTION
+--------------------------------------------------
+Decompressed    : MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Integrity Audit : [PASSED] Perfect lossless reconstruction confirmed!
+
+STAGE 3: STATISTICAL METRICS & EFFICIENCY
+--------------------------------------------------
+Total Unique Character Runs : 1
+Minimum Run Length          : 36
+Maximum Run Length          : 36
+Average Run Length          : 36.0
+Compression Ratio           : 8.33%
+Space Savings               : 91.67%
+Economic Viability          : [BENEFICIAL] Reduced storage by 33 characters.
+
+======================================================================
+BENCHMARK SUITE COMPLETED SUCCESSFULLY
+======================================================================
